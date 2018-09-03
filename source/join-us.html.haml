@@ -1,0 +1,146 @@
+---
+title: Join Us
+
+body:
+  - Structures
+  - join/structures.png
+  -
+    The Structures team is responsible for the design, build, and testing of
+    the drone. To design, we use Solidworks to model and analyze the
+    quadcopter’s custom and off the shelf components. To build, we use carbon
+    fiber layups, machining, and additive manufacturing processes. To test, we
+    fly (and crash) the vehicle indoors as well as at the MAir outdoor test
+    facility.
+  - Circuits
+  - join/circuits.png
+  -
+    Circuits designs and builds the vehicles' electrical hardware and
+    electronics for testing motors and materials. The vehicles' printed circuit
+    boards (PCB) have to provide platforms for the control software to run and
+    communicate with the navigation software, as well as manage the safety of
+    the batteries, motors, and operators. We design with Eagle and use
+    Subversion for collaboration.
+---
+
+.has-background-link.has-text-white
+  .info.container.has-text-centered
+    %h1.is-size-1{ style: 'padding-top: 1em; ' }
+      Welcome To
+      %b
+        MAAV
+    %h3.is-size-3
+      Learn about our team and how to join.
+.info.container.has-text-centered
+  %h1.is-size-1
+    How to Join
+  %h3.is-size-3
+    Submit
+    %a{:href => "https://docs.google.com/forms/d/18IfRk9t64Y4sFDMN9o4Q955p9mppXu6z25fxaD6U-5E/edit"} this Google form
+    so we can let you know about our mass meeting times and locations once we have them scheduled.
+%br/
+%hr/
+.info.container.has-text-centered
+  %h1.is-size-1
+    Who We Are
+  %h3.is-size-3
+    MAAV is a fully student led project team at the University of Michigan that
+    builds autonomous drones to compete at the annual
+    %a{:href => "http://www.aerialroboticscompetition.org/"} International Aerial Robotics
+    Competition (IARC).  Members of MAAV engage in the designing, building, and
+    testing of multiple autonomous unmanned aerial systems (UAS) while
+    furthering multiple areas of Computer Science and Aerospace Engineering
+    research.
+%br/
+%hr/
+.info
+  %h3.is-size-1.has-text-centered
+    Our Subteams
+  .info
+    .columns
+      .column
+        %h2.is-size-2
+          Utilities
+        %p.is-size-4
+          Utilities is responsible for developing tools to aid the rest of the
+          software team. We maintain a Gazebo simulation used to test the rest
+          of our software in a virtual environment by simulating sensor inputs.
+          We also develop a ground control station used to command the
+          quadcopter manually as well as a mobile app that accepts voice
+          commands for the vehicle.
+      .column
+        %img{ src: '/images/join/utilities.gif'}
+      .column
+        %h2.is-size-2
+          Mission Planning
+        %p.is-size-4
+          We develop algorithms to control the behavior of our quadcopter to
+          complete the mission. Our mission strategy algorithm is the brain of
+          our vehicle, which would not be autonomous without it. It involves
+          multi-robot collaboration and human-robot interaction. We work
+          actively with graduate level robotics students to find the best
+          solution for this new challenging mission.
+  = partial 'content', locals: { body: current_page.data.body }
+  %hr
+  .info
+    .columns
+      .column
+        %h2.is-size-2
+          GNC
+        %p.is-size-4
+          A core part of our team's work is in GNC (Guidance, Navigation, and
+          Control). GNC feeds inputs from the vision team and our sensors
+          into SLAM algorithms to figure out where the robot is in the world
+          around it, and is also responsible for getting the quadcopter to
+          where it needs to go (as instructed by Mission Planning).
+      .column
+        .level.is-horizontal-center
+          %figure.image.is-rounded
+            = image_tag 'join/gnc.png', style: 'max-height: 28em; max-width: 28em;'
+      .column
+        %h2.is-size-2
+          Perception
+        %p.is-size-4
+          We use Intel Realsense RGBD cameras and LIDAR to view our surrounding
+          world. To solve our challenges in the new mission, we research and
+          develop state-of-the-art algorithms to perform detection, segmentation,
+          fitting, tracking, and other functions on the image and point cloud.
+          Some problems we are working on include visual odometry, image
+          stitching, object detection, and tracking using advanced neural
+          networks. We also use LIDAR to estimate the position of obstacles. Our
+          algorithms are run on a Jetson TX2 embedded GPU.
+    %hr
+    .columns
+      .column
+        %h2.is-size-2
+          Embedded Systems
+        %p.is-size-4
+          The Embedded Systems subteam develops driver sofware for interfacing with the
+          low level sensors on the vehicle for our Texas Instruments TIVA Microprocessor.
+          This subteam works closely with circuits to ensure reliable sensor
+          communication and data throughput.
+    .columns
+      .column
+        %h2.is-size-2
+          Sponsorship and Outreach
+        %p.is-size-4
+          The sponsorship and outreach team is an interdisciplinary team focused on
+          presenting MAAV to the outside world. One big aspect of this is working with
+          sponsors to secure funding for MAAV's projects. This team also works on growing
+          MAAVs web presence through website development and social media.
+%section.hero.is-dark.is-medium
+  .hero-body.container.has-text-centered
+    %h1.is-size-1
+      Contact Us
+    %br
+    %br
+    %p.is-size-3
+      Email
+      %a{ href: 'mailto:maav-leads@umich.edu', target: '_top' }
+        maav-leads@umich.edu
+    %br
+    %br
+    %br
+    .columns
+      .column
+        %a.icon.is-large{ href: 'mailto:maav-leads@umich.edu', target: '_top' }
+          %i.fas.fa-6x.fa-envelope

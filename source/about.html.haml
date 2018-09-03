@@ -1,0 +1,46 @@
+---
+title: About
+
+body:
+  - A brief history..
+  - about/history.jpg
+  -
+    MAAV was formed in a tiny room in 2008 by a group of four students
+    at the University of Michigan. We were one of the very first teams
+    in Michigan’s history to work with autonomous vehicles, and we
+    revolutionized the Wilson Centre, the building where the organization
+    is located, by accommodating the increase in popularity of software
+    engineering. Fun fact, the four original founders went on to form their
+  - IARC
+  - about/iarc.jpg
+  -
+    MAAV participates in the International Aerial Robotics Competition
+    (IARC), held in the United States and China biannually, against
+    teams from across the world. The competition consists of several
+    missions, or challenges, that teams must complete to win. These
+    vary from search and rescue missions to flying into a village 3km
+    away, searching for a particular building, and inserting a robot
+    into an open window in that building. No team has successfully
+    completed all the challenges in the competition’s history, but MAAV's
+    drone consistently ranks highly. In 2012, it won first place in the
+    competition for successfully maneuvering and mapping the set course in
+    own startup, a drone corporation known as Sky Specs.
+  - Join Us!
+  - about/join.jpg
+  -
+    Joining MAAV is as simple as joining the mailing list and going to
+    workdays and meetings. All our subteam meetings during the week are
+    announced on the mailing list, and every weekend, we dedicate several
+    hours of work in the Wilson Center. Please note that our mailing list
+    is relatively high- volume, as all of our version control systems, our
+    continuous integration setup, and other team communications are sent
+    to this list. Email us at maav-leads@umich.edu!
+---
+
+%section.hero.is-link.is-medium
+  .hero-body
+    .container.has-text-centered
+      %h1.title{ style: 'font-size: 6em' }
+        = current_page.data.title
+.has-background-primary
+  = partial 'content', locals: { body: current_page.data.body }

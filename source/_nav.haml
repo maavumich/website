@@ -1,0 +1,16 @@
+%nav.navbar.is-warning{"aria-label" => "main navigation", role: "navigation"}
+  .navbar-brand
+    = link_to '/', class: 'navbar-item' do
+      = image_tag 'home/nav-logo2.png', style: "max-height: 3.5em"
+  .navbar-end
+    = link_to 'Home', '/', class: 'navbar-item'
+    .navbar-item.has-dropdown.is-hoverable
+      %p.navbar-item
+        Teams
+      .navbar-dropdown
+        = link_to 'Circuits', '/teams/circuits', class: 'navbar-item'
+        = link_to 'Software', '/teams/software', class: 'navbar-item'
+        = link_to 'Structures', '/teams/structures', class: 'navbar-item'
+        = link_to 'Business', '/teams/business', class: 'navbar-item'
+    = link_to 'About', '/about', class: 'navbar-item'
+    = link_to 'Join Us', '/join-us', class: 'navbar-item'

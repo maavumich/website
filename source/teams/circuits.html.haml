@@ -1,0 +1,36 @@
+---
+title: Circuits
+
+body:
+  - Bringing The Drone to Life
+  - teams/circuits-1.jpg
+  -
+    MAAV builds all of the electrical components in house. The circuits team leads
+    and design and construction of these components. The team works with the
+    different sensors on the quad-copter and routes information across the vehicle
+    to the electrical components. We also design a PCB to power the quad-copter.
+  - Design and Safety
+  - teams/circuits-2.png
+  -
+    Circuits works to find the the best solution and modern technology that we can
+    use to create a fast and powerful signal board and power board. The vehicle's
+    printed circuit board (PCB) has to provide a platform for control software to
+    run and communicate with navigation software, as well as manage the safety of
+    the battery, motors, and operators. Circuits tools such as Eagle and Subversion
+    for design and collboration.
+  - Highly Collaborative
+  - teams/circuits-3.jpg
+  -
+    Comprised mainly of CE and
+    EE majors, the circuits team is close knit and highly agile. In order to
+    develop a robust system, the circuits team collaborates heavily with the
+    structures and software infrastructure teams.
+---
+
+%section.hero.is-info.is-medium
+  .hero-body
+    .container.has-text-centered
+      %h1.title{ style: 'font-size: 6em' }
+        = current_page.data.title
+.has-background-danger
+  = partial 'content', locals: { body: current_page.data.body }

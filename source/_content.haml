@@ -1,0 +1,27 @@
+- x = 0
+- while x < body.size
+  - p = body[x + 2]
+  - t = body[x]
+  .info
+    .columns
+      - if x.even?
+        .column
+          %h2.is-size-2
+            = t
+          %p.is-size-4
+            = p
+        .column
+          .level.is-horizontal-center
+            %figure.image
+              = image_tag body[x + 1], class: 'is-square round', style: 'max-height: 30em; max-width: 30em;'
+      - else
+        .column
+          .level.is-horizontal-center
+            %figure.image
+              = image_tag body[x + 1], class: 'is-square round', style: 'max-height: 30em; max-width: 30em;'
+        .column
+          %h2.is-size-2
+            = t
+          %p.is-size-4
+            = p
+  - x += 3

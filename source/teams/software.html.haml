@@ -1,0 +1,51 @@
+---
+title: Software
+
+body:
+  - A complex mission
+  - teams/software-1.jpg
+  -
+    Members of software work in groups to tackle computer vision and localization
+    challenges, and develop a strategy to complete our mission in the IARC. To do
+    this, we work closely with graduate students and leverage advanced algorithms.
+    The most challenging component of our competition is computer vision based
+    localization. We detect lines and ground robots using input from five on-board
+    RGBD cameras using our customized detection algorithms. The results are passed
+    onto a highly sophisticated model that fuses input from the on-board inertial
+    measurement unit (IMU) and computer vision results to predict the location of
+    our vehicle in real time. We also benchmark various state-of-the-art object
+    tracking algorithms and adapt the one best suited for our mission. Finally, we
+    execute a mission strategy using knowledge of our current state of the vehicle
+    and ground robots inside the competition arena.
+  - The Infrastructure of Intelligent Flight
+  - about/history.jpg
+  -
+    The Software Infrastructure team writes the software that coordinates the
+    execution of navigation software, simulates the competition, and communicates
+    with the physical hardware. We allow various navigation software components to
+    communicate with each other. In addition, we write software which provides a
+    publish/subscribe interface to the physical hardware, allowing navigation
+    software components to subscribe to sensor updates or publish control input. To
+    simulate the competition, we can swap out the hardware interface software with
+    simulator software that exposes the same interface to the navigation software
+    components, but instead of talking to hardware, talks to a simulated quadcopter
+    in a simulated field. The Software Infrastructure team writes both embedded,
+    bare metal software running on an ARM microcontroller, low level Linux
+    Software, and Linux applications.
+  - A Growing Team
+  - about/history.jpg
+  -
+    Software is one of MAAV's largest growing subteams. With added focus on a
+    onboarding and training. Software has restructured into one of the most
+    productive groups on MAAV. Building the brain of the drone is hard work and we
+    are always looking for hard working students interested in learning more about
+    the world of intelligent robotics
+---
+
+%section.hero.is-info.is-medium
+  .hero-body
+    .container.has-text-centered
+      %h1.title{ style: 'font-size: 6em' }
+        = current_page.data.title
+.has-background-success
+  = partial 'content', locals: { body: current_page.data.body }

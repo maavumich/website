@@ -1,0 +1,30 @@
+$backgrounds: (home: '/images/home/hero.jpg');
+
+@each $key, $image in $backgrounds {
+  .hero-#{$key} {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 205, .1),
+        rgba(0, 0, 205, .1)
+      ),
+      image-url(#{$image});
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.info {
+  padding: 5em 7em;
+}
+
+.is-horizontal-center {
+  justify-content: center !important;
+}
+
+.footer {
+  padding: 1rem 1.5rem 6rem !important;
+}
+
+.round {
+  border-radius: 50% !important;
+}

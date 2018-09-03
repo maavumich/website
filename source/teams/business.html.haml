@@ -1,0 +1,32 @@
+---
+title: Business
+
+body:
+  - Sponsorship
+  - teams/b-2.jpg
+  -
+    In order for anything we do to be possible, we require funding from all
+    of our generous sponsors. The sponsorship department of the business
+    subteam is responsible for reaching out to our current sponsors and
+    ensuring their continued support. The business team also works to form
+    new relationships with interested sponsors. MAAV thanks all its sponsors
+    greatly for their contributions over the years.
+  - Blog
+  - teams/b-3.jpg
+  -
+    Our blog on Medium is a great way to keep up with everything that MAAV
+    does. It is meant as a resource both for members of MAAV to understand
+    what the other subteams are doing, and for non-members to understand what
+    the club is doing. It will be updated approximately every month, with a
+    post detailing all the activites of each of the individual subteams, to
+    give people a good idea of our big-picture workings.
+---
+
+%section.hero.is-info.is-medium
+  .hero-body
+    .container.has-text-centered
+      %h1.title{ style: 'font-size: 6em' }
+        = current_page.data.title
+.has-background-primary
+  .has-text-white
+    = partial 'content', locals: { body: current_page.data.body }

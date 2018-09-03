@@ -1,0 +1,40 @@
+---
+title: Structures
+
+body:
+  - Building the Future
+  - teams/structures-1.png
+  -
+    The structures team handles the design and engineering of the vehicle. Using
+    solidworks, the structures continues to develop vehicle components throughout
+    the semester. Through continuous design review and experimentation, the team
+    determines the best design strategies for the vehicle. Currently the vehicle is
+    built out of a mix of carbon fiber, metal components and 3D printed parts
+
+
+  - Flight Ready
+  - teams/structures-2.jpg
+  -
+    The structures team spends a lot of time preparing the vehicle for continuous
+    flight testing. Testing at MAAV's hangar at Ann Arbor's Willow Run Airport, the
+    structures team works hard to carefully evaluate the drone's aerodynamic
+    capabilities and make sure our drone is flying as smoothly as possible.
+
+  - Agile
+  - teams/structures-3.jpg
+  -
+    One of the smallest teams on MAAV, the structures team works hard and revises
+    often. Comprised of Aerospace and Mechanical Engineering students, the team
+    collaborates with everyone from the software navigation team to the aerospace
+    department to make sure that our design is ready to go when we take the field
+    at IARC
+---
+
+%section.hero.is-info.is-medium
+  .hero-body
+    .container.has-text-centered
+      %h1.title{ style: 'font-size: 6em' }
+        = current_page.data.title
+.has-background-grey-dark
+  .has-text-white
+    = partial 'content', locals: { body: current_page.data.body }
