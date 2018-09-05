@@ -30,7 +30,7 @@ body:
 %section.hero.is-info.is-medium
   .hero-body
     .container.has-text-centered
-      %h1.title{ style: 'font-size: 6em' }
+      %h1.title.is-size-2-mobile{ style: 'font-size: 6rem;' }
         = current_page.data.title
 .has-background-danger
   = partial 'content', locals: { body: current_page.data.body }
